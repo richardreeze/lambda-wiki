@@ -1,14 +1,11 @@
-body {
-  font-family: -apple-system,Georgia,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
-  background-color: #f1f1f1;
+/* .head {
+  width: 100%;
+} */
+.navbar-brand {
+  margin-left: 0;
 }
 
-.container {
-  /* max-width: 1000px; */
-  margin: 0 auto;
-  background-color: white;
-}
-
-h1 {
-  margin: 0px;
+.title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3rem;
 }

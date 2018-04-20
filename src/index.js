@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'bulma/css/bulma.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';

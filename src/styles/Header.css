@@ -1,11 +1,7 @@
-/* .head {
-  width: 100%;
-} */
-.navbar-brand {
-  margin-left: 0;
-}
-
 .title {
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.3rem;
+}
+.head {
+  height: 50px;
 }

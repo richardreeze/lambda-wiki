@@ -1,7 +1,12 @@
-.title {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 1.3rem;
-}
 .head {
-  height: 50px;
+  height: 60px;
+}
+
+.pic {
+  padding-top: 13px;
+  margin-left: 10px;
+}
+.profile {
+  padding: 20px;
+  margin-right: 10px;
 }

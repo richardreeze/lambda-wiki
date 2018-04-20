@@ -2,3 +2,11 @@
   margin-top: 20px;
   margin-left: 10px;
 }
+
+.cont {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

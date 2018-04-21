@@ -15,7 +15,7 @@ class App extends Component {
       burgerClass.push('is-active');
     }
     return (
-      <nav className="head navbar is-info" aria-label="main navigation">
+      <nav className="header navbar is-info" aria-label="main navigation">
         <div className="navbar-brand  is-marginless">
           <NavLink className="navbar-item pic" to="/">
             <img src="https://tk.lambdaschool.com/images/lambda_logo_light_small.png" alt="Lambda School"/>
@@ -39,8 +39,8 @@ class App extends Component {
             </div>
           </div>
           <div className="navbar-end">
-            <NavLink className="navbar-item" to="/">Add Entry</NavLink>
-          <div className="navbar-item has-dropdown is-hoverable">
+            <NavLink className="navbar-item" to="/">New Entry</NavLink>
+            <div className="navbar-item has-dropdown is-hoverable">
               <NavLink className="navbar-link" to="/">Users</NavLink>
               <div className="navbar-dropdown is-boxed">
                 <NavLink className="navbar-item" to="/">All Users</NavLink>

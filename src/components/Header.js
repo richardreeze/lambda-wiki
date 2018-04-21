@@ -30,10 +30,10 @@ class App extends Component {
           <div className="navbar-start">
             <NavLink className="navbar-item" to="/">Home</NavLink>
             <div className="navbar-item">
-            <div className="field">
+            <div className="field search">
               <p className="control has-icon">
-                <input className="input is-rounded" type="text" placeholder="Search" />
-                <span className="icon is-small"><i className="fas fa-search"></i></span>
+                <input className="input search-bar is-rounded" type="text" placeholder="Search" />
+                <span className="icon is-small"><i className="search-icon fas fa-search"></i></span>
               </p>
             </div>
             </div>
@@ -41,19 +41,25 @@ class App extends Component {
           <div className="navbar-end">
             <NavLink className="navbar-item" to="/">New Entry</NavLink>
             <div className="navbar-item has-dropdown is-hoverable">
-              <NavLink className="navbar-link" to="/">Users</NavLink>
-              <div className="navbar-dropdown is-boxed">
+              <div className="navbar-link is-hidden-touch">
+                <p className="control">
+                  <span className="icon">
+                    <i className="far fa-user"></i>
+                  </span>
+                </p>
+              </div>
+              <div className="navbar-dropdown is-right is-boxed">
+                <NavLink className="navbar-item" to="/">My Profile</NavLink>
+                <NavLink className="navbar-item" to="/">Account Settings</NavLink>
+                <hr class="dropdown-divider" />
                 <NavLink className="navbar-item" to="/">All Users</NavLink>
                 <NavLink className="navbar-item" to="/">Admins</NavLink>
+                <hr class="dropdown-divider" />
+                <a className="navbar-item" href="https://airtable.com/shryCoayae2Gv8Z3x" rel="noopener noreferrer" target="_blank">Feedback</a>
+                <hr class="dropdown-divider" />
+                <NavLink className="navbar-item" to="/">Log Out</NavLink>
               </div>
             </div>
-            <NavLink className="navbar-item profile" to="/">
-              <p className="control">
-                <span className="icon">
-                  <i className="far fa-user"></i>
-                </span>
-              </p>
-            </NavLink>
           </div>
         </div>
       </nav>

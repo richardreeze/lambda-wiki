@@ -10,3 +10,13 @@
   padding: 20px;
   margin-right: 10px;
 }
+.search-bar {
+  padding-top: 3px;
+  height: 30px;
+}
+.search-icon {
+  margin-bottom: 5px;
+}
+.search {
+  margin-top: 2px;
+}

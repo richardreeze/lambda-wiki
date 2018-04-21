@@ -41,7 +41,7 @@ class Welcome extends React.Component {
           Graduating students will also have perpetual access to the materials in this wiki, so you’ll continue to benefit from the improvements made over time.
           <br/>
           <br/>
-          The site is in <i>Alpha[0.01]</i>, if you find any issues with the site please let us know.
+          The site is in <i>Alpha[0.01]</i>, if you find any issues with the site or have any suggestions <a href="https://airtable.com/shryCoayae2Gv8Z3x" rel="noopener noreferrer" target="_blank">please let us know</a>.
           </p>
         </div>
       </section>

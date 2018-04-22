@@ -6,21 +6,56 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Welcome from './components/Welcome';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NewEntry from './components/NewEntry';
+import Loading from './components/HOC/Loading';
+import { BrowserRouter as Router } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
+
+const routes = [
+    { path: '/',
+        exact: true,
+        header: () => <Header />,
+        sidebar: () => <Nav />,
+        main: () => <Welcome />,
+        footer: () => <Footer />,
+    },
+    { path: '/new',
+        header: () => <Header />,
+        sidebar: null,
+        main: () => <NewEntry />,
+        footer: () => <Footer />,
+    },
+    { path: '/login',
+        header: () => <Header />,
+        sidebar: null,
+        main: () => <h2>login</h2>,
+        footer: () => <Footer />,
+    },
+    { path: '/logout',
+        header: () => <Header />,
+        sidebar: null,
+        main: () => <h2>logout</h2>,
+        footer: () => <Footer />,
+    },
+];
 
 ReactDOM.render(
     <Router>
         <div className='container is-widescreen'>
-            <Route path='/' component={Header} />
+            {routes.map((route, i) => (
+                <Loading key={i} path={route.path} exact={route.exact} component={route.header} />
+            ))}
             <div className='bodyContainer container is-widescreen is-marginless columns is-4'>
-                    <Route path='/' component={Nav} />
-                    <Switch>
-                        <Route path='/' component={Welcome}/>
-                        {/* <Route path='/view/:title' /> view page */}
-                    </Switch>
+                {routes.map((route, i) => (
+                    <Loading key={i} path={route.path} exact={route.exact} component={route.sidebar} />
+                ))}
+                {routes.map((route, i) => (
+                    <Loading key={i} path={route.path} exact={route.exact} component={route.main} />
+                ))}
             </div>
-            <Route path='/' component={Footer} />
+            {routes.map((route, i) => (
+                    <Loading key={i} path={route.path} exact={route.exact} component={route.footer} />
+            ))}
         </div>
     </Router>,
     document.getElementById('root')

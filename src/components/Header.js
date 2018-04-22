@@ -39,7 +39,7 @@ class App extends Component {
             </div>
           </div>
           <div className="navbar-end">
-            <NavLink className="navbar-item" to="/">New Entry</NavLink>
+            <NavLink className="navbar-item" to="/new">New Entry</NavLink>
             <div className="navbar-item has-dropdown is-hoverable">
               <div className="navbar-link is-hidden-touch">
                 <p className="control">
@@ -51,12 +51,12 @@ class App extends Component {
               <div className="navbar-dropdown is-right is-boxed">
                 <NavLink className="navbar-item" to="/">My Profile</NavLink>
                 <NavLink className="navbar-item" to="/">Account Settings</NavLink>
-                <hr class="dropdown-divider" />
+                <hr className="dropdown-divider" />
                 <NavLink className="navbar-item" to="/">All Users</NavLink>
                 <NavLink className="navbar-item" to="/">Admins</NavLink>
-                <hr class="dropdown-divider" />
+                <hr className="dropdown-divider" />
                 <a className="navbar-item" href="https://airtable.com/shryCoayae2Gv8Z3x" rel="noopener noreferrer" target="_blank">Feedback</a>
-                <hr class="dropdown-divider" />
+                <hr className="dropdown-divider" />
                 <NavLink className="navbar-item" to="/">Log Out</NavLink>
               </div>
             </div>

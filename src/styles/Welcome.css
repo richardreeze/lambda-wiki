@@ -14,14 +14,3 @@
 .cont {
   padding: 40px;
 }
-
-#nprogress .bar {
-  background: #A00020;
-}
-#nprogress .peg {
-  box-shadow: 0 0 10px #A00020, 0 0 5px #A00020;
-}
-#nprogress .spinner-icon {
-  border-top-color: #A00020;
-  border-left-color: #A00020;
-}

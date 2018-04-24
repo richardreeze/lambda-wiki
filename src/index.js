@@ -11,6 +11,7 @@ import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 import { BrowserRouter as Router } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
+import './styles/responsive-tweaks.css'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(logger, thunk)));

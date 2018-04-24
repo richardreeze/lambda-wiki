@@ -1,0 +1,16 @@
+@media screen and (min-width:767px) {
+  .page {
+    margin-right: 10px;
+  }
+  .sidebar {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width:1152px) {
+  .page {
+    margin-right: 0;
+  }
+  .sidebar {
+    margin-left: 0;
+  }
+}

@@ -10,6 +10,7 @@ import NewEntry from './components/NewEntry';
 import Loading from './components/HOC/Loading';
 import { BrowserRouter as Router } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
+import './styles/responsive-tweaks.css'
 
 const routes = [
     { path: '/',

@@ -1,0 +1,17 @@
+.login {
+  margin-top: 20px;
+  height: 75vh;
+  overflow: hidden;
+}
+.log_cont {
+  margin-top: 100px;
+  width: 320px;
+}
+
+.field {
+  width: 100%;
+}
+
+.subm {
+  width: 80px;
+}
